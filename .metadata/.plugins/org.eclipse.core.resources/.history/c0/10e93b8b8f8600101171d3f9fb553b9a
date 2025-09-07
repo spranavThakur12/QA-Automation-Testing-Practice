@@ -1,0 +1,32 @@
+package WebDriver_Demos;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment3 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		// Creating the driver object
+		WebDriver driver = new ChromeDriver();
+		//Maximizing the Window
+		driver.manage().window().maximize();
+		// opening the Url
+		driver.get("https://www.facebook.com");
+		// finding the WebElement (userName And Password element) through the className and entering the valid id pass  
+		WebElement userName = driver.findElement(By.className("inputtext"));
+		 userName.sendKeys("pranavsingh63947202@gmail.com");
+		 Thread.sleep(1000);
+		 // Targeting the Password field and entering the data into it
+		 WebElement password = driver.findElement(By.className("inputtext _55r1"));
+		 password.sendKeys("#Pr@n@v-!&ingh@12");
+		 Thread.sleep(1000);
+		 // clicking on login button or hitting the enter
+		 WebElement login = driver.findElement(By.className("_42ft _4jy0 _52e0 _4jy6 _4jy1 selected _51sy"));
+		 login.sendKeys(Keys.ENTER);
+	}
+
+}

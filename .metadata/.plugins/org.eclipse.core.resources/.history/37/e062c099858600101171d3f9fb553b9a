@@ -1,0 +1,39 @@
+package WebDriver_Demos;
+
+import org.openqa.selenium.By;
+//import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assingment2 {
+      public static void main(String[] args) throws InterruptedException {
+    	  // Way of  creating driver object 
+    	  WebDriver driver = new ChromeDriver();
+    	  // maximizing the window
+    	  driver.manage().window().maximize();
+    	  // Opnening the Url
+    	  driver.get("https://www.echotrak.com/Login.aspx?ReturnUrl=%2f");
+    	  String pageTitle = driver.getTitle();
+    	  String pageUrl = driver.getCurrentUrl();
+    	  // finding the locators
+    	  driver.findElement(By.id("txtCustomerID")).sendKeys("PranavSingh");
+    	  Thread.sleep(2000);
+    	  driver.findElement(By.id("txtPassword")).sendKeys("PranavSingh");
+    	  Thread.sleep(2000);
+    	  // sending login
+    	WebElement login = driver.findElement(By.id("Butsub"));
+    	    login.click();
+//    		login.sendKeys(Keys.ENTER);
+    	  System.out.println("the pageTitle " + pageTitle);
+    	  System.out.println("the URL of " + pageUrl);
+    	  System.out,println("==========================");
+    	  if(pageTitle.equals("EchoTrak Login")) {
+    		  System.out.println("Test Case Pass: ");
+    	  }
+    	  else {
+    		  System.out.println("Test Case Fail:");
+    	  }
+    	  Thread.sleep(3000);
+      }
+}
