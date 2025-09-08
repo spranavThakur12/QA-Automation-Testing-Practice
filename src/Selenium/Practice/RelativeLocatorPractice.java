@@ -18,7 +18,7 @@ public class RelativeLocatorPractice{
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://www.google.com/");
+        driver.get("https://www.google.com/webhp");
         WebElement serachBox = driver.findElement(RelativeLocator.with(By.tagName("textarea")).above(By.name("btnK")));
          serachBox.sendKeys("Sachin");
         driver.close();

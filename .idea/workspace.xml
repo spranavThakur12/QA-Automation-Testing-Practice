@@ -27,6 +27,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HandilingMultipleCheckBoxAndRadio.executor": "Run",
+    "Application.HandlingChecboxAndRadioBtn.executor": "Run",
     "Application.Loc_ByName.executor": "Run",
     "Application.RelativeLocatorPractice.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -37,13 +39,19 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "editing.templates"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="P:\Pranav_SeleniumWorkspace\Automation_Selenium\Assignment" />
     </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="Selenium.Practice" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\prana\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
