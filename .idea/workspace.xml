@@ -27,6 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DropDownPractice.executor": "Run",
     "Application.HandilingMultipleCheckBoxAndRadio.executor": "Run",
     "Application.HandlingChecboxAndRadioBtn.executor": "Run",
     "Application.Loc_ByName.executor": "Run",
