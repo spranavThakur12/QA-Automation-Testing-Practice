@@ -6,6 +6,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.time.Duration;
+
 public class LaunchBrowsers {
     public static WebDriver driver = null;
 
@@ -26,12 +28,25 @@ public class LaunchBrowsers {
     }
     public static void launchURL(String appUrl){
         driver.get(appUrl);
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
     public static void Sleep(){
         try{
-            Thread.sleep(5000);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -29,8 +29,11 @@
   "keyToString": {
     "Application.AssignmentNo_10.executor": "Run",
     "Application.AssignmentNo_11.executor": "Run",
+    "Application.AssignmentNo_19.executor": "Run",
+    "Application.AssignmentNo_22.executor": "Run",
     "Application.DropDownPractice.executor": "Run",
     "Application.HandilingMultipleCheckBoxAndRadio.executor": "Run",
+    "Application.HandleWindowsDemoQA.executor": "Run",
     "Application.HandlingChecboxAndRadioBtn.executor": "Run",
     "Application.IdLocatorPractice.executor": "Run",
     "Application.ImplicitWaitsPractice.executor": "Run",
@@ -46,7 +49,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editing.templates"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">

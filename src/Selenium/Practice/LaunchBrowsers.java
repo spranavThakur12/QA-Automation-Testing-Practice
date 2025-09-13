@@ -27,8 +27,8 @@ public class LaunchBrowsers {
     }
     public static void launchURL(String appUrl){
        driver.get(appUrl);
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
     public static void Sleep(){
         try{
