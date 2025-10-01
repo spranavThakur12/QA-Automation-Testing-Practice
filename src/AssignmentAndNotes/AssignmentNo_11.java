@@ -34,11 +34,10 @@ public class AssignmentNo_11 extends LaunchBrowsers {
         WebElement date = driver.findElement(By.xpath("//*[@id='root']/div[2]/div/div[2]/div/div/div[1]/div[3]/div[1]"));
         date.click();
 
-        String month = "Jaunary";
-        String year = "2026";
+        String monthYear = "Jaunary 2026";
         WebElement monthYear = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[2]/div/div/div[1]/div[3]/div[3]/div[2]/div/div/div/p[1]"));
 
-        while (!monthYear.getText().equals("January 2026")) {
+        while (!monthYear.getText().equals(monthYear)) {
             driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/div[2]/div/div/div[1]/div[3]/div[3]/div[2]/div/div/i[2]")).click();
         }
 
